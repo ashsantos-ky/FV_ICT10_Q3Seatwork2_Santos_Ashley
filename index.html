@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Q3-ICT10:Seatwork2</title>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <style>
+        h1{
+            text-align: center;
+
+        }
+
+        body{
+            background-color: rgb(213, 223, 226);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container{
+            background-color: rgb(233, 226, 209);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        button{
+            background-color: #cfebd0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>Seatwork 2 Third Quarter</h1>
+        <div id="container" class="container">
+            <h5>Answered the online registration?</h5>
+            <input type="radio" id="or" name="registration" value="yes">
+            <label for="or">I have</label>
+            <input type="radio" id="or" name="registration" value="no">
+            <label for="or">I have not</label>
+            <h5>Clearance from the Clinic?</h5>
+           <input type="radio" id="cl" name="clinic" value="yes">
+            <label for="cl">Cleared</label>
+            <input type="radio" id="cl" name="clinic" value="no">
+            <label for="cl">None</label>
+            <h5>What's your Grade & Section?</h5>
+            <select>
+                <option id="grade" value="select">Select Grade</option>
+                <option id="grade" value="even">7</option>
+                <option id="grade" value="eigh">8</option>
+                <option id="grade" value="nin">9</option>
+                <option id="grade" value="ten">10</option>
+            </select>
+            <select>
+                <option id="section" value="select">Select Section</option>
+                <option id="section" value="emerald">Emerald</option>
+                <option id="section" value="jade">Jade</option>
+                <option id="section" value="ruby">Ruby</option>
+                <option id="section" value="sapphire">Sapphire</option>
+                <option id="section" value="topaz">Topaz</option>
+            </select>
+            <br><br>
+             <button id="button">Submit</button>
+             <button py-click="clear_fields">Clear</button>
+        </div>
+        <div id="output"></div>
+
+        <script type="py" src="main.py"></script>
+    </body>
+    </html>
